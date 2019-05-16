@@ -16,6 +16,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(require('./routes/news'));
 app.use(require('./routes/images'));
 app.use(require('./routes/email'));
+app.use(require('./routes/users'));
+app.use(require('./routes/login'));
+app.use(require('./routes/session'));
 
 mongoose.set('useCreateIndex', true);
 mongoose.connect(process.env.URLDB, { useNewUrlParser: true }, (err) => {

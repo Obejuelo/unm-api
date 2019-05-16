@@ -13,10 +13,7 @@ let noticeSchema = new Schema({
         type: String,
         required: [true, 'El info es necesario']
     },
-    image: {
-        type: String,
-        required: false
-    },
+    image: String,
     date: {
         type: String,
         required: [true, 'El date es necesario']
