@@ -15,6 +15,17 @@ const create = async (req, res) => {
     }
 }
 
+const update = async (req, res) => {
+    let id = req.params.id;
+    let body = req.body;
+    
+    try {
+        let result = await User.findOneAndUpdate({ '_id': id }, body, { new: true, runValidators: true })
+    } catch (err) {
+        console.log(err);
+    }
+}
+
 module.exports = {
     create
 }
