@@ -19,7 +19,7 @@ process.env.CAD_TOKEN = '24h';
 
 ```
 
-#### 2. secrets.js file with your keys of cloudinary
+#### 2. secrets.js file with your cloudinary keys
 
 ```javascript
 
