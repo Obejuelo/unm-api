@@ -4,8 +4,8 @@ Code in Node.js of UNM API
 
 ## Required steps
 
-###Create config folder with three files<br>
-####1. config.js file with
+### Create config folder with three files<br>
+#### 1. config.js file with
 
 ```javascript
 process.env.PORT = process.env.PORT || 5000;
@@ -18,7 +18,7 @@ process.env.CAD_TOKEN = '24h';
 
 ```
 
-####2. secrets.js file with your keys of cloudinary
+#### 2. secrets.js file with your keys of cloudinary
 
 ```javascript
 
@@ -32,7 +32,7 @@ module.exports = {
 
 ```
 
-####3. upload.js with 
+#### 3. upload.js with 
 
 ```javascript
 const multer = require('multer');
